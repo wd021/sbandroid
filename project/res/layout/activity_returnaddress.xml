@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="fill_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical" android:baselineAligned="false" android:background="#eae7e7">
+
+    <ScrollView android:id="@+id/ScrollView01"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" android:layout_marginTop="20dp" android:paddingBottom="5dp">
+
+        <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" android:background="@color/white"
+                android:padding="10dp">
+
+            
+            <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal" android:paddingTop="5dp" android:paddingBottom="5dp"
+                    android:background="@drawable/edit_text">
+                <EditText
+                        android:id="@+id/streetAddress2"
+                        android:layout_height="wrap_content"
+                        android:hint="House Number"
+                        android:lines="1"
+                        android:singleLine="true"
+                        android:inputType="textPersonName"
+                        android:layout_width="fill_parent" android:layout_weight="1"
+                        android:background="@android:color/transparent" android:layout_gravity="bottom"
+                        android:textColor="@color/black">
+                </EditText>
+                <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/imageView2" android:src="@drawable/ic_action_edit"
+                        android:layout_marginRight="5dp" android:layout_weight="0"
+                        android:layout_gravity="center_vertical"/>
+
+            </LinearLayout>
+            
+            <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal" android:paddingTop="5dp" android:paddingBottom="5dp"
+                    android:background="@drawable/edit_text">
+                <EditText
+                        android:id="@+id/streetAddress"
+                        android:layout_height="wrap_content"
+                        android:hint="Street Address"
+                        android:lines="1"
+                        android:singleLine="true"
+                        android:inputType="textPersonName"
+                        android:layout_width="fill_parent" android:layout_weight="1"
+                        android:background="@android:color/transparent" android:layout_gravity="bottom"
+                        android:textColor="@color/black">
+                </EditText>
+                <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/imageView2" android:src="@drawable/ic_action_edit"
+                        android:layout_marginRight="5dp" android:layout_weight="0"
+                        android:layout_gravity="center_vertical"/>
+
+            </LinearLayout>
+            <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal" android:paddingTop="5dp" android:paddingBottom="5dp"
+                    android:background="@drawable/edit_text">
+                <EditText
+                        android:id="@+id/city"
+                        android:layout_height="wrap_content"
+                        android:hint="City"
+                        android:lines="1"
+                        android:singleLine="true"
+                        android:inputType="textPersonName"
+                        android:layout_width="fill_parent" android:layout_weight="1"
+                        android:text="Chicago"
+                        android:background="@android:color/transparent" android:layout_gravity="bottom"
+                        android:textColor="@color/black">
+                </EditText>
+                <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/imageView3" android:src="@drawable/ic_action_edit"
+                        android:layout_marginRight="5dp" android:layout_weight="0"
+                        android:layout_gravity="center_vertical"/>
+
+            </LinearLayout>
+
+      <!--       <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal" android:paddingTop="5dp" android:paddingBottom="5dp"
+                    android:background="@drawable/edit_text">
+                <EditText
+                        android:id="@+id/state"
+                        android:layout_height="wrap_content"
+                        android:hint="State"
+                        android:lines="1"
+                        android:singleLine="true"
+                        android:inputType="textPersonName"
+                        android:layout_width="fill_parent" android:layout_weight="1"
+                        android:background="@android:color/transparent" android:layout_gravity="bottom"
+                        android:textColor="@color/black">
+                </EditText>
+                <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/imageView4" android:src="@drawable/ic_action_edit"
+                        android:layout_marginRight="5dp" android:layout_weight="0"
+                        android:layout_gravity="center_vertical"/>
+
+            </LinearLayout> -->
+
+
+            <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal" android:paddingTop="5dp" android:paddingBottom="5dp"
+                    android:background="@drawable/edit_text">
+                <EditText
+                        android:id="@+id/zipCode"
+                        android:layout_height="wrap_content"
+                        android:hint="ZipCode"
+                        android:inputType="number"
+                        android:lines="1"
+                        android:singleLine="true"
+                        android:layout_width="fill_parent"
+                        android:layout_weight="1"
+                        android:background="@android:color/transparent"
+                        android:layout_gravity="bottom"
+                        android:textColor="@color/black">
+                </EditText>
+                <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/imageView5" android:src="@drawable/ic_action_edit"
+                        android:layout_marginRight="5dp" android:layout_weight="0"
+                        android:layout_gravity="center_vertical"/>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+    <Button
+            android:id="@+id/saveAddress"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:text="SAVE"
+            android:textColor="@android:color/white"
+            android:background="@color/action_color" android:textSize="25sp"/>
+</LinearLayout>

@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="libs">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/libs/stripe-android-master/stripe/libs/gson-2.2.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/libs/stripe-android-master/stripe/libs/junit-4.10.jar!/" />
+      <root url="jar://$PROJECT_DIR$/libs/stripe-android-master/stripe/libs/stripe-java-1.12.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

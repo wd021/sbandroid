@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:background="@drawable/background">
+
+    <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="fill_parent"
+            android:layout_height="500px"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_weight="0.69"
+            android:scaleType="centerCrop"
+            android:visibility="invisible"
+            />
+
+
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:layout_centerHorizontal="true" android:layout_marginTop="50dp">
+        <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageView2" android:src="@drawable/cart_icon" android:layout_gravity="center"
+                android:padding="5dp"/>
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Take a photo"
+                android:id="@+id/textView" android:layout_gravity="center" android:padding="5dp"/>
+        <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageView3" android:src="@drawable/bubochka" android:layout_gravity="center"
+                android:padding="5dp"/>
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Choose shipping option"
+                android:id="@+id/textView2" android:layout_gravity="center" android:padding="5dp"/>
+        <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageView4"
+                android:src="@drawable/bubochka"
+                android:layout_gravity="center" android:padding="5dp"/>
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Enter destination adress"
+                android:id="@+id/textView3" android:layout_gravity="center" android:padding="5dp"/>
+    </LinearLayout>
+    <Button
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            android:text="LOGIN"
+            android:id="@+id/loginbutton_invitation" android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:layout_alignWithParentIfMissing="false" android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="false" android:textSize="25dp" android:background="#3b5998"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Registration"
+            android:id="@+id/registration_invitation" android:layout_above="@+id/loginbutton_invitation" android:layout_centerHorizontal="true"
+            android:layout_margin="20dp" android:textColor="#0095e0" android:textSize="22dp"/>
+
+</RelativeLayout>
+

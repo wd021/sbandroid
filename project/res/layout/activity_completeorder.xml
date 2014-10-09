@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" android:background="@color/white">
+
+
+    <LinearLayout
+       android:layout_width="wrap_content"
+       android:layout_height="match_parent"
+       android:background="@android:color/white"
+       android:orientation="horizontal"
+       android:padding="5dp" android:layout_weight="1">
+
+
+        <TextView
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:text="Congratulations! A Ship Captain will be on their way  to pick your item within 20 minutes. "
+       android:id="@+id/shipcaptainmessage"
+       android:textSize="25sp" android:textColor="@color/black" android:layout_gravity="center"
+       android:gravity="center"/>
+   </LinearLayout>
+
+    
+    	      <LinearLayout
+         android:layout_width="match_parent"
+    	 android:layout_height="70dp"
+         android:orientation="horizontal"
+         android:layout_gravity="center_horizontal">
+
+	          
+	            
+	            
+            <Button
+                android:id="@+id/trackOrder"
+      			android:layout_width="match_parent"
+      			android:layout_height="match_parent"
+                android:ems="5"
+                android:textSize="25sp"
+                android:text="Track Order"  android:lines="1" android:background="@color/action_color"
+                android:textColor="#ffffff" android:layout_gravity="center_horizontal"
+                    />
+
+        </LinearLayout>
+    
+    
+	      <LinearLayout
+         android:layout_width="match_parent"
+    	 android:layout_height="70dp"
+         android:orientation="horizontal"
+         android:layout_gravity="center_horizontal">
+
+	          
+	            
+	            
+            <Button
+                android:id="@+id/cancelOrder"
+      			android:layout_width="match_parent"
+      			android:layout_height="match_parent"
+                android:ems="5"
+                android:textSize="25sp"
+                android:text="Cancel Order" android:lines="1" 
+                android:textColor="#ffffff" android:layout_gravity="center_horizontal"
+                    />
+
+        </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Project.iml" filepath="$PROJECT_DIR$/Project.iml" />
+      <module fileurl="file://$PROJECT_DIR$/libs/actionbarsherlock/actionbarsherlock.iml" filepath="$PROJECT_DIR$/libs/actionbarsherlock/actionbarsherlock.iml" />
+      <module fileurl="file://$PROJECT_DIR$/libs/facebook-android-sdk-3.7/facebook/facebook.iml" filepath="$PROJECT_DIR$/libs/facebook-android-sdk-3.7/facebook/facebook.iml" />
+      <module fileurl="file://$PROJECT_DIR$/libs/sidenavigation/sidenavigation.iml" filepath="$PROJECT_DIR$/libs/sidenavigation/sidenavigation.iml" />
+      <module fileurl="file://$PROJECT_DIR$/libs/stripe-android-master/stripe/src/main/stripe.iml" filepath="$PROJECT_DIR$/libs/stripe-android-master/stripe/src/main/stripe.iml" />
+    </modules>
+  </component>
+</project>
+

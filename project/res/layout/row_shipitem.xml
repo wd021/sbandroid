@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="horizontal"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@color/white">
+
+    <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:id="@+id/imageView"
+            android:src="@drawable/stub"
+            android:layout_margin="10dp"/>
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Medium Text"
+                android:id="@+id/nameTextView"
+                android:textColor="@color/black" android:layout_margin="5dp"/>
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Medium Text"
+                android:id="@+id/addressTextView"
+                android:textColor="#bec6c5" android:layout_margin="5dp"/>
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" android:gravity="right">
+            <Spinner
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:id="@+id/optionsButton"
+                    android:background="@drawable/button_smallwhite"
+                    android:layout_margin="10dp" />
+            <!--<Button-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="40dp"-->
+                    <!--android:text="SHIPPING OPTIONS"-->
+                    <!--android:id="@+id/optionsButton"-->
+                    <!--android:background="@drawable/button_smallwhite" -->
+                    <!--android:layout_margin="10dp"-->
+                    <!--android:textSize="14sp"/>-->
+            <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:text="New Button"
+                    android:id="@+id/deleteButton" android:src="@android:drawable/ic_menu_delete" android:padding="5dp"
+                    android:background="@drawable/button_smallwhite" android:layout_margin="10dp"
+                    android:layout_marginLeft="0dp"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent" android:background="#eae7e7">
+
+    <ScrollView android:id="@+id/ScrollView01"
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+            >
+
+        <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="10dp"
+                android:background="@color/white"
+                android:padding="10dp">
+
+            <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:background="@drawable/edit_text"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp">
+                <EditText
+                        android:id="@+id/contactName"
+                        android:layout_width="10dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3"
+                        android:hint="Contact name"
+                        android:lines="1"
+                        android:singleLine="true"
+                        android:textColor="#000000"
+                        android:textSize="15sp"
+                        android:background="@android:color/transparent"
+                        android:layout_gravity="bottom"/>
+                <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/imageView"
+                        android:src="@drawable/ic_action_edit"
+                        android:layout_gravity="center_vertical"
+                        android:paddingRight="5dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/edit_text"
+                    android:paddingBottom="5dp"
+                    android:paddingTop="5dp">
+
+
+                <EditText
+                        android:id="@+id/streetName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3"
+                        android:hint="Street name"
+                        android:lines="1"
+                        android:singleLine="true"
+                        android:textColor="#000000"
+                        android:textSize="15sp"
+                        android:background="@android:color/transparent"
+                        android:layout_gravity="bottom"/>
+                <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/imageView2"
+                        android:src="@drawable/ic_action_edit"
+                        android:layout_gravity="center_vertical"
+                        android:paddingRight="5dp"/>
+
+            </LinearLayout>
+            <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/edit_text"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp">
+
+                <EditText
+                        android:id="@+id/apptNumber"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Appartment number:"
+                        android:textColor="#000000"
+                        android:lines="1"
+                        android:singleLine="true"
+                        android:textSize="15sp"
+                        android:layout_weight="1"
+                        android:background="@android:color/transparent"
+                        android:layout_gravity="bottom"/>
+                <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/imageView3"
+                        android:src="@drawable/ic_action_edit"
+                        android:layout_gravity="center_vertical"
+                        android:paddingRight="5dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/edit_text"
+                    android:paddingBottom="5dp"
+                    android:paddingTop="5dp">
+
+                <EditText
+                        android:id="@+id/city"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3"
+                        android:lines="1"
+                        android:singleLine="true"
+                        android:hint="City:"
+                        android:textColor="#000000"
+                        android:textSize="15sp"
+                        android:background="@android:color/transparent"
+                        android:layout_gravity="bottom"/>
+                <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/imageView4"
+                        android:src="@drawable/ic_action_edit"
+                        android:layout_gravity="center_vertical"
+                        android:paddingRight="5dp"/>
+
+
+            </LinearLayout>
+            <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/edit_text"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp">
+
+                <EditText
+                        android:id="@+id/zipCode"
+                        android:layout_width="10dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3"
+                        android:hint="ZipCode:"
+                        android:textColor="#000000"
+                        android:lines="1"
+                        android:singleLine="true"
+                        android:textSize="15sp"
+                        android:inputType="number"
+                        android:background="@android:color/transparent"
+                        android:layout_gravity="bottom"/>
+                <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/imageView5"
+                        android:src="@drawable/ic_action_edit"
+                        android:layout_gravity="center_vertical"
+                        android:paddingRight="5dp"/>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:background="@drawable/edit_text"
+                    android:paddingTop="5dp" android:paddingBottom="5dp" android:layout_marginTop="5dp">
+
+                <EditText
+                        android:id="@+id/Country"
+                        android:layout_width="10dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3"
+                        android:hint="Country"
+                        android:lines="1"
+                        android:singleLine="true"
+                        android:textColor="#000000"
+                        android:textSize="15sp"
+                        android:layout_gravity="bottom" android:background="@android:color/transparent"/>
+                <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/imageView6" android:src="@drawable/ic_action_edit"
+                        android:layout_gravity="center_vertical" android:paddingRight="5dp"/>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </ScrollView>
+    <Button
+            android:id="@+id/saveContact"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:text="SAVE CONTACT"
+            android:background="@color/action_color"
+            android:textColor="@color/white"/>
+</LinearLayout>

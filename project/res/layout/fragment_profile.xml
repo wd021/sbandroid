@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+        android:background="#eae7e7">
+
+
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:background="@color/white">
+
+        <com.facebook.widget.ProfilePictureView
+                xmlns:facebook="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/selection_profile_pic"
+                android:layout_width="95dp"
+                android:layout_height="95dp"
+                android:layout_gravity="left"
+                android:layout_weight="0"
+                android:gravity="left"
+                facebook:preset_size="large"
+                android:layout_marginRight="10dp"/>
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_weight="1"
+                android:background="@drawable/edit_text" android:paddingLeft="5dp" android:paddingTop="5dp"
+                android:paddingBottom="5dp">
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="Large Text"
+                    android:id="@+id/userNameTextView"
+                    android:layout_gravity="bottom"
+                    android:layout_weight="1"
+                    android:textColor="@color/black"
+                    android:background="@android:color/transparent"/>
+            <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/nameImageButton"
+                    android:src="@drawable/ic_action_edit"
+                    android:background="@android:color/transparent" android:visibility="invisible"/>
+        </LinearLayout>
+    </LinearLayout>
+    <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@drawable/dark_border"/>
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:padding="10dp"
+            android:background="@color/white">
+
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@drawable/edit_text"
+                android:paddingTop="15dp" android:paddingBottom="5dp">
+            <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_action_mail"/>
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Large Text"
+                    android:id="@+id/emailTextView"
+                    android:layout_weight="1"
+                    android:textColor="@color/black"
+                    android:paddingLeft="5dp" android:textSize="17sp" android:layout_gravity="bottom"/>
+            <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/emailImageButton"
+                    android:src="@drawable/ic_action_edit"
+                    android:background="@android:color/transparent" android:visibility="invisible"/>
+        </LinearLayout>
+
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@drawable/edit_text"
+                android:paddingTop="15dp"
+                android:paddingBottom="5dp">
+            <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_action_phone"/>
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:text="Enter Phone Number"
+                    android:id="@+id/phoneTextView"
+                    android:layout_weight="1"
+                    android:textColor="@color/black"
+                    android:paddingLeft="5dp" android:textSize="17sp" android:layout_gravity="bottom"/>
+            <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/phoneImageButton"
+                    android:src="@drawable/ic_action_add"
+                    android:background="@android:color/transparent"/>
+        </LinearLayout>
+
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@drawable/edit_text"
+                android:paddingTop="15dp"
+                android:paddingBottom="5dp">
+            <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_action_card"/>
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:text="Enter Credit Card"
+                    android:id="@+id/cardTextView"
+                    android:layout_weight="1"
+                    android:textColor="@color/black"
+                    android:paddingLeft="5dp" android:textSize="17sp" android:layout_gravity="bottom"/>
+            <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/cardImageButton"
+                    android:src="@drawable/ic_action_add"
+                    android:background="@android:color/transparent"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@drawable/edit_text"
+            android:paddingTop="15dp"
+            android:paddingBottom="5dp">
+        <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_action_coupon"/>
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+    
+                android:text="Enter Promo Code"
+                android:id="@+id/couponTextView"
+                android:layout_weight="1"
+                android:textColor="@color/black"
+                android:paddingLeft="5dp" android:textSize="17sp" android:layout_gravity="bottom"/>
+        <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/couponImageButton"
+                android:src="@drawable/ic_action_add"
+                android:background="@android:color/transparent"/>
+        </LinearLayout>
+        
+    <!--     <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@drawable/edit_text"
+                android:paddingTop="15dp"
+                android:paddingBottom="5dp">
+            <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_action_address"/>
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/addressTextView"
+                    android:layout_weight="1"
+                    android:textColor="#a7a9a9"
+                    android:paddingLeft="5dp"
+                    android:text="Add Retutn Address"
+                    android:textStyle="normal|italic"
+                    android:textSize="17sp"
+                    android:layout_gravity="bottom"/>
+            <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/addressImageButton"
+                    android:src="@drawable/ic_action_add"
+                    android:background="@android:color/transparent"/>
+        </LinearLayout> -->
+    </LinearLayout>
+
+    <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@drawable/dark_border"/>
+
+</LinearLayout>

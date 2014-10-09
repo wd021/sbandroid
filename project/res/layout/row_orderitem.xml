@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" android:background="@android:color/white" android:padding="5dp">
+        <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:id="@+id/imageImageView" android:src="@drawable/stub"/>
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" android:layout_gravity="center_vertical"
+                android:gravity="center_vertical">
+            <!-- <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="Track your package"
+                    android:id="@+id/nameTextView" android:layout_gravity="center_vertical"
+                    android:textColor="@color/action_color" android:textSize="18sp" android:padding="5dp"/> -->
+            <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent">
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Status: "
+                        android:textSize="18sp"
+                        android:textColor="@color/black"
+                        android:padding="5dp"/>
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Status"
+                        android:textSize="18sp"
+                        android:textColor="#ff5f6260"
+                        android:padding="5dp"
+                        android:id="@+id/statusTextView"/>
+            </LinearLayout>
+            <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/cancelImageButton"
+                    android:src="@android:drawable/ic_menu_delete"
+                    android:layout_gravity="right"
+                    android:visibility="gone"
+                    android:background="@drawable/button_smallwhite"/>
+        </LinearLayout>
+    </LinearLayout>
+    <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@drawable/dark_border"/>
+</LinearLayout>

@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:background="@color/white">
+
+
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true" android:layout_alignParentEnd="false"
+            android:layout_alignParentTop="true" android:layout_centerVertical="true">
+
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:background="@color/white" android:layout_marginTop="10dp">
+
+            <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:background="@drawable/edit_text"
+                    android:paddingTop="15dp"
+                    android:paddingBottom="5dp">
+                <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_action_card"/>
+                <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:lines="1"
+                        android:singleLine="true"
+                        android:id="@+id/regFirstName"
+                        android:layout_weight="1"
+                        android:textColor="@color/black"
+                        android:paddingLeft="5dp" android:textSize="17sp" android:layout_gravity="bottom"
+                        android:background="@android:color/transparent" android:hint="First Name"/>
+                <ImageButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_action_edit"
+                        android:background="@android:color/transparent"/>
+            </LinearLayout>
+
+            <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:background="@drawable/edit_text"
+                    android:paddingTop="15dp"
+                    android:paddingBottom="5dp">
+                <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_action_card"/>
+                <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:lines="1"
+                        android:singleLine="true"
+                        android:id="@+id/regLastName"
+                        android:layout_weight="1"
+                        android:textColor="@color/black"
+                        android:paddingLeft="5dp" android:textSize="17sp" android:layout_gravity="bottom"
+                        android:background="@android:color/transparent" android:hint="Last Name"/>
+                <ImageButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_action_edit"
+                        android:background="@android:color/transparent"/>
+            </LinearLayout>
+
+            <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:background="@drawable/edit_text"
+                    android:paddingTop="15dp" android:paddingBottom="5dp">
+                <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_action_mail"/>
+                <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/regEmail"
+                        android:layout_weight="1"
+                        android:textColor="@color/black"
+                        android:paddingLeft="5dp"
+                        android:textSize="17sp"
+                        android:layout_gravity="bottom"
+                        android:lines="1"
+                        android:inputType="textEmailAddress"
+                        android:singleLine="true"
+                        android:background="@android:color/transparent"
+                        android:hint="Email Address"/>
+                <ImageButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_action_edit"
+                        android:background="@android:color/transparent"/>
+            </LinearLayout>
+
+            <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:background="@drawable/edit_text"
+                    android:paddingTop="15dp"
+                    android:paddingBottom="5dp">
+                <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_action_phone"/>
+                <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/regPassword"
+                        android:layout_weight="1"
+                        android:textColor="@color/black"
+                        android:paddingLeft="5dp"
+                        android:textSize="17sp"
+                        android:layout_gravity="bottom"
+                        android:lines="1"
+                        android:singleLine="true"
+                        android:background="@android:color/transparent"
+                        android:hint="Password"
+                        android:inputType="textPassword"/>
+                <ImageButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_action_edit"
+                        android:background="@android:color/transparent"/>
+            </LinearLayout>
+
+            <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:background="@drawable/edit_text"
+                    android:paddingTop="15dp"
+                    android:paddingBottom="5dp">
+                <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_action_phone"/>
+                <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:inputType="textPassword"
+                        android:id="@+id/regConfirmPassword"
+                        android:layout_weight="1"
+                        android:textColor="@color/black"
+                        android:paddingLeft="5dp"
+                        android:textSize="17sp"
+                        android:lines="1"
+                        android:singleLine="true"
+                        android:layout_gravity="bottom"
+                        android:background="@android:color/transparent"
+                        android:hint="Repeat Password"/>
+                <ImageButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_action_edit"
+                        android:background="@android:color/transparent"/>
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@drawable/dark_border"/>
+
+
+
+
+    </LinearLayout>
+    <Button
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            android:text="REGISTER"
+            android:id="@+id/registration_button"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:layout_alignWithParentIfMissing="false" android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="false" android:textSize="25dp" android:background="@color/action_color"/>
+
+
+</RelativeLayout>
+
+
+
+
+
+
+
+
+    <!--<Button-->
+            <!--android:id="@+id/register_button"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="70dp"-->
+            <!--android:background="#30aaa3"-->
+            <!--android:text="Register" android:textSize="25dp" android:textAlignment="center"-->
+            <!--android:textColor="@color/white"/>-->
+
+<!--</LinearLayout>-->

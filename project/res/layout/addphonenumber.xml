@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="#eae7e7">
+
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:padding="10dp"
+            android:background="@color/white">
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Update Your Phone Number"
+                android:id="@+id/textView"/>
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@drawable/edit_text"
+                android:paddingTop="15dp"
+                android:paddingBottom="5dp">
+            <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_action_phone"/>
+            <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:id="@+id/phoneNumberEditText"
+                    android:lines="1"
+                    android:singleLine="true"
+                    android:layout_weight="1"
+                    android:textColor="@color/black"
+                    android:paddingLeft="5dp"
+                    android:textSize="17sp"
+                    android:layout_gravity="bottom" android:inputType="phone"/>
+            <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/phoneImageButton"
+                    android:src="@drawable/ic_action_edit"
+                    android:background="@android:color/transparent"/>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@drawable/dark_border"/>
+
+
+    <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp" android:layout_weight="1">
+    </RelativeLayout>
+    <FrameLayout
+            android:id="@+id/savePhoneNumber"
+            style="?android:attr/buttonStyle"
+            android:layout_width="match_parent"
+            android:layout_alignParentBottom="true"
+            android:background="@color/action_color"
+            android:layout_height="70dp">
+
+        <TextView
+                style="?android:attr/buttonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@null"
+                android:clickable="false"
+                android:textSize="25sp"
+                android:focusable="false"
+                android:gravity="center"
+                android:minHeight="0dp"
+                android:minWidth="0dp"
+                android:textColor="@color/white"
+                android:text="SAVE"/>
+    </FrameLayout>
+
+</LinearLayout>
+
+

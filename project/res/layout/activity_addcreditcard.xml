@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="#eae7e7">
+
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:padding="10dp"
+            android:background="@color/white">
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Add a Credit Card to Your Profile"
+                android:id="@+id/textView"/>
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@drawable/edit_text"
+                android:paddingTop="15dp"
+                android:paddingBottom="5dp">
+            <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_action_card"/>
+            <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:id="@+id/number"
+                    android:layout_weight="1"
+                    android:textColor="@color/black"
+                    android:paddingLeft="5dp"
+                    android:textSize="17sp"
+                    android:inputType="number"
+                    android:lines="1"
+                    android:singleLine="true"
+                    android:layout_gravity="bottom"
+                    style="@style/CardNumber"
+                    android:hint="Card Number"/>
+            <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/phoneImageButton"
+                    android:src="@drawable/ic_action_edit"
+                    android:background="@android:color/transparent"/>
+        </LinearLayout>
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="15dp">
+            <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.710"
+                    android:layout_gravity="bottom"
+                    >
+                <Spinner android:id="@+id/expMonth"
+                         android:layout_height="wrap_content"
+                         android:layout_width="wrap_content"
+                         android:background="@drawable/spinner_default"
+                         style="@style/ExpMonth"
+                         android:layout_gravity="bottom"
+                         android:paddingBottom="10dp"
+                         android:paddingLeft="10dp"
+                        />
+
+                <Spinner android:id="@+id/expYear"
+                         android:layout_height="wrap_content"
+                         android:layout_width="wrap_content"
+                         style="@style/ExpYear"
+                        android:background="@drawable/spinner_default"
+                        android:layout_gravity="bottom"
+                        android:paddingBottom="10dp"
+                        android:paddingLeft="10dp"
+                        />
+            </LinearLayout>
+            <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="0.30"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="10dp"
+                    android:background="@drawable/edit_text">
+                <EditText
+                        android:layout_width="0dp"
+                        android:layout_height="30dp"
+                        android:inputType="numberSigned"
+                        android:ems="10"
+                        android:lines="1"
+                        android:singleLine="true"
+                        android:id="@+id/cvc"
+                        android:layout_gravity="bottom"
+                        android:background="@android:color/transparent"
+                        android:hint="CVC"
+                        android:layout_weight="1"/>
+                <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/imageView" android:src="@drawable/ic_action_edit" android:layout_weight="0"
+                        android:layout_gravity="bottom"/>
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@drawable/dark_border"/>
+
+
+    <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp" android:layout_weight="1">
+    </RelativeLayout>
+    <FrameLayout
+            android:id="@+id/saveCreditCard"
+            android:layout_width="match_parent"
+            android:layout_alignParentBottom="true"
+            android:background="@color/action_color"
+            android:layout_height="70dp">
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@null"
+                android:clickable="false"
+                android:textSize="25sp"
+                android:focusable="false"
+                android:gravity="center"
+                android:minHeight="0dp"
+                android:minWidth="0dp"
+                android:textColor="@color/white"
+                android:text="SAVE"/>
+    </FrameLayout>
+
+</LinearLayout>
+
+

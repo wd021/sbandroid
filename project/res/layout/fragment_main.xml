@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:background="#ede8e2"
+              android:orientation="vertical">
+
+
+    <LinearLayout android:id="@+id/InnerRelativeLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0"
+                    android:layout_gravity="center"
+                    android:background="#73bbed"
+                    android:orientation="horizontal">
+
+        <TextView android:id="@+id/streetAddress"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="Nearest Ship Bob agent is 10 minutes away"
+                  android:textColor="@android:color/white"
+                  android:textSize="18dp"
+                  android:padding="10dp"
+                  android:layout_gravity="center_vertical"
+                  android:layout_weight="1"/>
+        <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageView"
+                android:layout_gravity="center_vertical"
+                android:background="@android:color/transparent"
+                android:src="@drawable/ic_action_edit_white"
+                android:paddingRight="10dp"
+                android:paddingLeft="5dp"
+                android:paddingTop="5dp"/>
+
+
+    </LinearLayout>
+    <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp" android:layout_weight="1">
+        <ListView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/listView"
+                android:layout_weight="1"/>
+        <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_centerInParent="true"
+                android:id="@+id/hiddenLayout">
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="YOU HAVEN'T ADDED ANY ITEMS TO BE SHIPPED YET."
+                    android:id="@+id/textView"
+                    android:layout_centerInParent="true"
+                    android:textColor="#989bab"
+                    android:padding="10dp"
+                    android:layout_margin="10dp"
+                    android:textStyle="bold"
+                    android:gravity="center"/>
+
+               <TextView
+                   android:id="@+id/textViewSupport"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_below="@+id/textView"
+                   android:layout_centerHorizontal="true"
+                   android:layout_margin="10dp"
+                   android:gravity="center"
+                   android:padding="10dp"
+                   android:textAppearance="?android:attr/textAppearanceMedium"
+                   android:text="Tap on add items to add one"
+                   android:textColor="#989bab"
+                   android:textStyle="bold" />
+               
+        </RelativeLayout>
+    </RelativeLayout>
+    
+     <FrameLayout
+            android:id="@+id/costEstimateLayout"
+            android:layout_width="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_height="70dp">
+        <TextView
+                android:id="@+id/costEstimateTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@null"
+                   android:textSize="21sp"
+         		 android:textStyle="italic" 
+                android:focusable="false"
+                android:gravity="center"
+                android:minHeight="0dp"
+                android:minWidth="0dp"
+                android:textColor="#0000FF"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Click for Shipping Estimate: $5+ Cost of Shipping"/>
+    </FrameLayout>
+    
+    <FrameLayout
+            android:id="@+id/shipItFrameLayout"
+            style="?android:attr/buttonStyle"
+            android:layout_width="match_parent"
+            android:layout_alignParentBottom="true"
+            android:background="@color/action_color"
+            android:layout_height="70dp">
+
+             
+        <TextView
+                android:id="@+id/shipItTextView"
+                style="?android:attr/buttonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@null"
+                android:textSize="25dp"
+                android:drawableLeft="@drawable/ic_action_pocket"
+                android:focusable="false"
+                android:gravity="center"
+                android:minHeight="0dp"
+                android:minWidth="0dp"
+                android:textColor="@color/white"
+                android:text="PICKUP NOW"/>
+    </FrameLayout>
+
+</LinearLayout>
+
